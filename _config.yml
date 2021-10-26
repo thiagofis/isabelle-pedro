@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Isabel e Thiago
+title: Isabelle e Pedro
 email: thiagomsdev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  "This is the stoy of a search for the beginning of time", ou em português, "esta é a história de uma busca pelo começo do tempo". Assim se inicia o filme que assistimos no nosso primeiro encontro. Compartilhando neste espaço um pouquinho sobre a gente...
+  Nesse site será possível acompanhar quanto tempo falta para o dia que tanto estamos esperando. Iremos celebrar e oficializar a aliança do nosso amor. Para quem acompanhou a história de perto, sabe que este momento é mais esperado do que o final feliz de um filme, porque é real, porque é lindo, e porque não há nada mais inspirador do que ver os sonhos se transformando em realidade.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://isabelethiago.com/"
+url: "http://isabelleepedro.space/"
 twitter_username: jekyllrb
 github_username:  jekyll
 #repository: thiagofis/isabel-thiago
