@@ -275,23 +275,35 @@ $(function() {
   // --------------------------------------------- //
   // We are waiting for you Form Start
   // --------------------------------------------- //
-  $("#we-are-waiting-for-you-form-id").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "guest", //Change
-			data: th.serialize()
-		}).done(function() {
-      $('.contact').find('.form').addClass('is-hidden');
-      $('.contact').find('.reply-group').addClass('is-visible');
-			setTimeout(function() {
-				// Done Functions
-        $('.contact').find('.reply-group').removeClass('is-visible');
-        $('.contact').find('.form').delay(300).removeClass('is-hidden');
-				th.trigger("reset");
-			}, 5000);
-		});
-		return false;
+  $("#we-are-waiting-for-you-form-id").submit(function(e) { //Change
+      e.preventDefault();
+      var json = {name: $('#guest-name-id').val(), eventId: 'bella-wedding'};
+      var th = $(this);
+
+      $.ajax({
+			url: "https://fernanda15func.azurewebsites.net/api/PostRequestFunction", //Change
+            type: "POST",
+            headers: {  'Access-Control-Allow-Origin': '*' },
+            dataType: "json",
+			data: JSON.stringify(json),
+            success: function (data) {
+                $('.contact').find('.form').addClass('is-hidden');
+                $('.contact').find('.reply-group').addClass('is-visible');
+                setTimeout(function() {
+                    // Done Functions
+                    $('.contact').find('.reply-group').removeClass('is-visible');
+                    $('.contact').find('.form').delay(300).removeClass('is-hidden');
+                    th.trigger("reset");
+                }, 4000);
+            },
+            error: function (xhr, status) {
+                console.log(status)
+            },
+            complete: function (xhr, status) {
+
+            }
+		})
+
 	});
   // --------------------------------------------- //
   // We are waiting for you Form End
