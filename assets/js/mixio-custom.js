@@ -180,7 +180,7 @@ $(function() {
   // KBW-Countdown Start
   // --------------------------------------------- //
   $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2021, 3, 16), format: 'D'});
-  $('#countdown-large').countdown({until: new Date(2021, 11 - 1, 7,19,30), timezone: -2});
+  $('#countdown-large').countdown({until: new Date(2021, 12 - 1, 29,19,30), timezone: -2});
   // --------------------------------------------- //
   // KBW-Countdown End
   // --------------------------------------------- //
