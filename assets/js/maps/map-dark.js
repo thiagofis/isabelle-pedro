@@ -32,10 +32,10 @@ $(function() {
   var latitude = -22.935726, 
     longitude = -43.580764,
     map_zoom = 16;
-	
-  var condominioCalifornia = new google.maps.LatLng(-22.931992, -43.576702);
-  var jardimMagarca = new google.maps.LatLng(-22.935726, -43.580764);	
-  var parkShopping = new google.maps.LatLng(-22.927144, -43.574778);	
+    -22.877880776339982, -43.549646773535656
+  var center = new google.maps.LatLng(-22.88207450163876, -43.55322756964662);
+  var bambuLounge = new google.maps.LatLng(22.8790449,-43.551954,17);
+  var parkShopping = new google.maps.LatLng(-22.927144, -43.574778);
 
   // Google Map Custom Marker Icon
   var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
@@ -410,8 +410,9 @@ $(function() {
 	  ]
 	  
 	  // Google Map Options
+
       var map_options = {
-            center: condominioCalifornia,
+            center: center,
             zoom: map_zoom,
             gestureHandling: 'cooperative',
             panControl: false,
@@ -428,153 +429,14 @@ $(function() {
 
       // Custom Marker
       var marker = new google.maps.Marker({
-          position: jardimMagarca,
+          position: bambuLounge,
           map: map,
           visible: true,
         //icon: marker_url,
       });
-	  
-	  var marker = new google.maps.Marker({
-          position: parkShopping,
-          map: map,
-          visible: true,		  
-		  icon: {
-				labelOrigin : new google.maps.Point(-21, 0),
-				path: google.maps.SymbolPath.CIRCLE,
-				fillColor: '#FFFFFF',
-				fillOpacity: 1,
-				strokeColor: '#303030',
-				strokeOpacity: 0.9,
-				strokeWeight: 3,
-				scale: 10
-			}
-      });
-	  
-	  
-	  var marker = new google.maps.Marker({
-          position: parkShopping,
-          map: map,
-          visible: true,
-		  label: {
-			  text: "Park Shopping Campo Grande",
-			  fontWeight: "800",
-			  fontSize: "17px"
-		  },
-		  icon: {
-				labelOrigin : new google.maps.Point(-32, 0),
-				path: google.maps.SymbolPath.CIRCLE,
-				fillColor: '#FFFFFF',
-				fillOpacity: 1,
-				strokeColor: '#303030',
-				strokeOpacity: 0.9,
-				strokeWeight: 3,
-				scale: 4
-			}
-      });
-	  
-	  
-	  
-	  
-	   createRoute(map);
-	  
-	  
-	  
-	  
-	       
 
-	  function createRoute(map){
-		  
-		  var route = [
-          {lat:-22.926950, lng:-43.573719},
-          {lat:-22.927177, lng:-43.573637},		  
-          //{lat:-22.927177, lng:-43.573596},
-          {lat:-22.927366, lng:-43.573472},
-          {lat:-22.927517, lng:-43.573226},
-          {lat:-22.927707, lng:-43.573082},
-          {lat:-22.928028, lng:-43.573041},
-          {lat:-22.928180, lng:-43.573308},
-          {lat:-22.928350, lng:-43.573534},
-          {lat:-22.928520, lng:-43.573637},
-          {lat:-22.928785, lng:-43.573863},
-          {lat:-22.928993, lng:-43.574027},
-          {lat:-22.929277, lng:-43.574089},
-          {lat:-22.929580, lng:-43.574068},
-          {lat:-22.929788, lng:-43.574068},
-          {lat:-22.930129, lng:-43.574212},
-          {lat:-22.930413, lng:-43.574274},
-          {lat:-22.930564, lng:-43.574253},
-          {lat:-22.930848, lng:-43.574335},
-          {lat:-22.931094, lng:-43.574335}, 
-          {lat:-22.931643, lng:-43.574479},
-          //{lat:-22.931587, lng:-43.574521},
-          {lat:-22.931889, lng:-43.574623},
-          {lat:-22.932135, lng:-43.574787},
-          {lat:-22.932343, lng:-43.574849},
-          {lat:-22.932608, lng:-43.575054},
-          //{lat:-22.932808, lng:-43.575141},
-          {lat:-22.932927, lng:-43.575281},
-          //{lat:-22.933092, lng:-43.575485},
-          {lat:-22.933210, lng:-43.575603},
-          //{lat:-22.933289, lng:-43.575689},
-          {lat:-22.933368, lng:-43.575807},
-          //{lat:-22.933487, lng:-43.575903},
-          {lat:-22.933606, lng:-43.576043},
-          //{lat:-22.933665, lng:-43.576139},
-          {lat:-22.933784, lng:-43.576279},
-          //{lat:-22.933892, lng:-43.576386},
-          {lat:-22.934001, lng:-43.576493},
-          //{lat:-22.934110, lng:-43.576590},
-          {lat:-22.934169, lng:-43.576729},
-          //{lat:-22.934208, lng:-43.576912},
-          {lat:-22.934297, lng:-43.576998},
-          //{lat:-22.934307, lng:-43.577159},
-          {lat:-22.934357, lng:-43.577277},
-          //{lat:-22.934416, lng:-43.577480},
-          {lat:-22.934431, lng:-43.577779},
-          //{lat:-22.934451, lng:-43.577951},
-          {lat:-22.934491, lng:-43.578091},
-          //{lat:-22.934540, lng:-43.578219},
-          {lat:-22.934590, lng:-43.578380},
-          //{lat:-22.934639, lng:-43.578488},
-          {lat:-22.934708, lng:-43.578648},
-          //{lat:-22.934827, lng:-43.578777},
-          {lat:-22.934837, lng:-43.578917},
-          //{lat:-22.934906, lng:-43.579067},
-          {lat:-22.934995, lng:-43.579174},
-          //{lat:-22.935024, lng:-43.579346},
-          {lat:-22.935123, lng:-43.579378},
-          //{lat:-22.935173, lng:-43.579539},
-          {lat:-22.935242, lng:-43.579657},
-          //{lat:-22.935301, lng:-43.579807},
-          {lat:-22.935390, lng:-43.579957},
-          //{lat:-22.935439, lng:-43.580086},
-          {lat:-22.935548, lng:-43.580204},
-          //{lat:-22.935647, lng:-43.580344},
-          {lat:-22.935726, lng:-43.580451},
-          //{lat:-22.935815, lng:-43.580526},
-          {lat:-22.935884, lng:-43.580644}
-        ];
-		  
-		for (i = 0; i < route.length; i++) { 
-		  new google.maps.Marker({
-			map: map,
-			position: route[i],
-			icon: {
-				path: google.maps.SymbolPath.CIRCLE,
-				fillColor: '#49ABE7',
-				fillOpacity: 1,
-				strokeColor: '#5A91DA',
-				strokeOpacity: 0.9,
-				strokeWeight: 2,
-				scale: 4
-			}
-		  });
-		}
-		  
-		
-	  }		  
 
-	
+
       // Custom zoom-in/zoom-out Buttons
       function CustomZoomControl(controlDiv, map) {
 

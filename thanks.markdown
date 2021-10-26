@@ -18,8 +18,8 @@ layout: default
                     <div class="headline">
                         <h1 class="light-text">Muito<br>obrigado</h1>
                         <p class="light-text">Amamos o seu presente!</p>
-                        <a href="/" class="btn btn-line btn-line-light">
-                            <span>Clique aqui para voltar para a página principal.</span>
+                        <a href="/#facebook-comments-page" class="btn btn-line btn-line-light">
+                            <span>Clique aqui para deixar uma mensagem para os noivos.</span>
                         </a>
                     </div>
                     <!-- Main Headline End -->
