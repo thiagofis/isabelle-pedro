@@ -1,11 +1,12 @@
 $(window).on('load',function () {
-    //setTimeout(hiddeniFrame, 700);
-
 
     if(window.location.href.includes("#facebook-comments-page")){
-        $('#writealine-trigger').trigger('click');
+        $('.writealine').addClass("is-visible");
+        $('#writealine-close').addClass("is-scaled-up");
     }
-
+    else {
+        setTimeout(hiddeniFrame, 700);
+    }
 });
 
 function hiddeniFrame() {
