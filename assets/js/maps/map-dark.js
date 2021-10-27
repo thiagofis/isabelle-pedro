@@ -33,7 +33,7 @@ $(function() {
       longitude = -43.580764,
       map_zoom = 16;
 
-  var center = new google.maps.LatLng(-22.881764235018924, -43.55391584637727);
+  var center = new google.maps.LatLng(-22.882369062978906, -43.552574742113855);
   var bambuLounge = new google.maps.LatLng(-22.87906, -43.5497528);
   var westShopping = new google.maps.LatLng(-22.8844836, -43.5576059);
 
