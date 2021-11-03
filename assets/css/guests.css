@@ -1,0 +1,7 @@
+﻿.guests table.table{
+    width: 100%;
+}
+
+.guests table thead tr {
+    font-weight: bold;
+}
