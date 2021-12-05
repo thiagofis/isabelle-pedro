@@ -1,0 +1,10 @@
+.thanks-image {
+    background-image:url(/assets/img/photos/thanks.jpg);
+}
+
+
+@media only screen and (max-width:450px){
+    .thanks-image {
+        background-image: url(/assets/img/photos/thanks_mobile.jpg);
+    }
+}

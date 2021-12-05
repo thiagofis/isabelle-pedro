@@ -7,3 +7,14 @@
 .fb_container .fb-comments button {
     background-color: #191919 !important;
 }
+
+.mural-comments {
+    background-image:url(/assets/img/photos/comments.jpg);
+}
+
+
+@media only screen and (max-width:450px){
+    .mural-comments {
+        background-image: url(/assets/img/photos/comments_mobile.jpg);
+    }
+}

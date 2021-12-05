@@ -12,7 +12,7 @@ layout: default
         <div class="container-fluid p-0 fullheight">
             <div class="row m-0 fullheight">
                 <!-- Main Section Intro Start -->
-                <div class="col-12 fullheight home_intro" style="background-image:url(/assets/img/photos/thanks.jpg);">
+                <div class="col-12 fullheight home_intro thanks-image">
                     <div class="layer-black"></div>
                     <!-- Main Headline Start -->
                     <div class="headline">
